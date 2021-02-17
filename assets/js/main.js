@@ -10,12 +10,12 @@
                         preloader.remove();
                         NProgress.done();
                     }, 2000);
-                    setTimeout(function() {
+                   /* setTimeout(function() {
                         $('html, body').animate({
                             scrollTop: 0
                         }, '50');
                     }, 50);
-                };
+                */};
             })();
             $(document).ready(function() {
                 $(".br").html("<br>");
@@ -30,9 +30,11 @@
                         $("#mobileNav").hide();
                         $(".brNav").html("<br><br><br><br>");
                     }
-                    var spinner = '<div class="ns-page-loading active"><div class="ns-page-loading-inner"><div class="ns-page-spinner"> </div></div></div>';
-                    if ($(window).width() < 200) {
-                        $("body").html(spinner);
+                    if ($(window).width() < 216) {
+                        var loaderMin = '<div class="ns-page-loading active" id="loaderMin"></div>';
+                        $(".loaderSMSM").html(loaderMin);
+                    } else {
+                        $("#loaderMin").hide();
                     }
                 }).resize();
             });
@@ -44,15 +46,15 @@
                 });
             });
             $(function() {
-                $('.nameSurname').pdKisalt({
-                    limit: 10,
+                $('.usernamePost').pdKisalt({
+                    limit: 25,
                     text: "",
                     text2: ""
                 });
             });
             $(function() {
-                $('.usernamePost').pdKisalt({
-                    limit: 25,
+                $('.nameSurname').pdKisalt({
+                    limit: 30,
                     text: "",
                     text2: ""
                 });

@@ -6,7 +6,7 @@
       <link rel="icon" type="image/png" href="https://gist.github.com/fluidicon.png"/>
       <script src="assets/js/plugin.js"></script>
       <link rel="stylesheet" type="text/css" href="assets/css/plugin.css">
-      <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css?v=4">
       <meta content="width=device-width, initial-scale=1" name="viewport">
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
    </head>
@@ -113,3 +113,4 @@
          </div>
       </div>
       <div class="brNav"></div>
+      <div class="br"></div>

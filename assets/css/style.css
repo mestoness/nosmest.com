@@ -27,7 +27,8 @@
              line-height: 1.5;
              font-family: "Roboto", "Helvetica", "Arial", sans-serif;
              background: black;
-             word-break: break-word;
+             /* word-break: break-word;
+         */
          }
          body::-webkit-scrollbar-track {
              background-color: #2C2D2D;
@@ -51,8 +52,20 @@
              line-height: 1.8
          }
          /*mixed*/
-
+         .btn-a {
+            color: white
+         }
+         .btn-a:hover{
+            color: white
+         }
+.d-inline-block{
+    display: inline-block;
+}
+         .hr-grey {
+             border: 1px solid grey
+         }
          .ns-form-control:focus {
+             transition: 0.6s;
              border: 1px solid black;
          }
          .float-right {
@@ -286,12 +299,15 @@
          .container .card div {
              padding: 8px;
          }
+         .container .card .picture {
+             background: black
+         }
          .container .card .picture img {
              width: 40px;
              border-radius: 50px;
          }
          .container .card .time {
-             margin-top: 1px;
+             margin-top: -6px;
              font-size: 12px;
              color: #999;
              display: block;
@@ -299,7 +315,7 @@
          }
          .container .card .name {
              color: white;
-             padding: 5px
+             padding: 0 5px
          }
          .container .card .post-body {
              padding: 0;
@@ -313,7 +329,7 @@
          }
          .card-col-post {
              background: black;
-             padding: 30px;
+             padding: 1rem;
          }
          /*rgb(243 243 243)
            #060606*/
@@ -344,4 +360,25 @@
              background: black !important;
              color: white;
              border-radius: 2px;
+         }
+         textarea {
+             font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+         }
+         .nameSurname {
+             display: inline-flex;
+             max-width: 17rem;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             padding: 0 !important
+         }
+         @media (max-width: 451px) {
+             .nameSurname {
+                 max-width: 10rem
+             }
+         }
+         @media (max-width: 331px) {
+             .nameSurname {
+                 max-width: 5rem
+             }
          }
